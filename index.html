@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .about {
+            color: black;
+            font-size: 15px;
+            display: flex;
+            font-family: sans-serif;
+            background-color: grey;
+            width: auto;
+            border-style: solid;
+            border-width: 5px 5px;
+            border-color: grey;
+        }
+
+        .s1 {
+            width: 50%;
+        }
+
+        .s2 {
+            width: 50%;
+            border-style: solid;
+            border-width: 2px 5px;
+            border-color: grey;
+            background-color: lavender;
+
+        }
+
+        .li {
+
+            margin: 70px auto;
+            list-style-type: none;
+
+
+        }
+
+        #list {
+            overflow-y: scroll;
+            height: 350px;
+            color: rgb(37, 37, 206);
+        }
+
+        .main {
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+
+        }
+
+        .second {
+            background-image: url(https://images.pexels.com/photos/696644/pexels-photo-696644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .second h1 {
+            color: white;
+        }
+
+        .first {
+            background-image: url(https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1000px;
+        }
+
+        .first h1,
+        p {
+            color: black;
+        }
+
+        .mentor {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            justify-content: space-evenly;
+            color: black;
+        }
+
+        .mentor .men,
+        h2 {
+            color: black;
+        }
+
+        .student {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .stu:hover {
+            width: 320px;
+            opacity: 1;
+            height: auto;
+
+        }
+
+        .link {
+            width: 100%;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            margin: 20px auto;
+
+        }
+
+        .stu img {
+            margin: auto;
+        }
+
+        .stu:hover {
+            color: rgb(0, 132, 255);
+            font-size: larger;
+        }
+
+        .men:hover img {
+            width: 400px;
+            height: auto;
+        }
+
+        .men:hover {
+            color: rgb(0, 132, 255);
+            font-size: larger;
+        }
+
+        .he:hover {
+
+            font-size: xx-large;
+        }
+
+        .mave:hover {
+            color: rgb(0, 132, 255);
+            font-size: x-large;
+        }
+
+
+        @media (max-width: 700px) {
+            .mentor {
+                flex-direction: column;
+            }
+
+            .first {
+                height: auto;
+            }
+
+        }
+
+        .stu {
+            display: flex;
+            flex-direction: column;
+            background-color: gainsboro;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .bu {
+            width: 100px;
+            height: 30px;
+            margin: 20px auto;
+        }
+
+        .bu:hover {
+            opacity: 0.5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="maverick">
+                <h1>TYP MAVERICK</h1>
+                <p>TYP is a organisaztion which is on its way to make a community of full stack developer</p>
+
+            </div>
+            <div>
+                <h2 class="he">MENTOR</h2>
+            </div>
+            <div class="mentor">
+                <div class="men" id="m1">
+                    <h2>Devansh Shrivastava</h2>
+                    <img src="images/de.jpg" alt="m1" height="400px" width="350px">
+                </div>
+                <div class="men" id="m2">
+                    <h2>Gaurav Chauhan</h2>
+                    <img src="images/ga.jpg" alt="m2" height="400px" width="350px">
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="s1">
+                <h1>THE YOUTH PROJECT</h1>
+                <h2>Vission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore quis doloremque architecto
+                    corporis ipsum quidem odit, facere rem minima necessitatibus aspernatur, inventore natus vero iure
+                    recusandae! Suscipit, qui magni?</p>
+                <h2>Mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt odio voluptas consectetur
+                    voluptatibus, quo quae quibusdam maxime aliquam et dicta tempore est quos. Eaque amet obcaecati
+                    reiciendis facere velit.</p>
+                <h2>community</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi architecto omnis quaerat velit,
+                    id, eos corrupti illo sit, mollitia corporis. Omnis doloribus repellendus sint provident iure
+                    expedita ipsam voluptate.</label></p>
+            </div>
+            <div class='s2' id="qw">
+                <h1>News</h1>
+                <ul id="list">
+                    <marquee>
+                        <li class="li">Shivam is the first Maverick!</li>
+                        <img src="images/ma.jpeg" height="350px" width="300px">
+                    </marquee>
+                    <marquee>
+                        <li class="li">Sakshi submitted assignment</li>
+                        <img src="images/ss.png" height="350px" width="300px">
+                    </marquee>
+                    <marquee>
+                        <li class="li">New batch of TYP to start!</li>
+                    </marquee>
+
+                </ul>
+                <button class="bu" id="ub" onclick="update()">Update List!</button>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <h1>WARRIOR</h2>
+            </div>
+            <div class="student">
+                <div class="stu" id="s4">
+                    <h2>Sakshi Mishra</h2>
+                    <img src="images/sa.jpeg" alt="s4" height="350px" width="300px">
+                    <div class="link">
+                        <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="
+                                instagram"</a>
+                            <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px"
+                                    alt="linkedin"></a>
+                    </div>
+
+                </div>
+
+                <div class="stu" id="s1">
+                    <h2>Aditya Khare</h2>
+                    <img src="images/ad.jpg" alt="s1" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s2">
+                    <h2>Priyanka Chaudhary</h2>
+                    <img src="images/pr.jpeg" alt="s2" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s3">
+                    <h2>Dheeraj Borawat</h2>
+                    <img src="images/dh.jpeg" alt="s3" height="350px" width="300px">
+
+                </div>
+
+                <div class="stu" id="s5">
+                    <h2>Shailly</h2>
+                    <img src="images/sh.jpg" alt="s5" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s6">
+                    <h2>Dope Code</h2>
+                    <img src="images/do.jpeg" alt="s6" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s7">
+                    <h2>Prasheet</h2>
+                    <img src="images/pr.jpeg" alt="s7" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s8">
+                    <h2>Harshdeep Yadav</h2>
+                    <img src="images/ha.jpeg" alt="s8" height="350px" width=="300px">
+
+                </div>
+
+                <div class="stu" id="s9">
+                    <h2>Veena Baraik</h2>
+                    <img src="images/ve.jpeg" alt="s9" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s10">
+                    <h2>Rohit</h2>
+                    <img src="images/ro.jpeg" alt="s10" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s11">
+                    <h2>Ayush Abhishek</h2>
+                    <img src="images/ay.jpeg" alt="s11" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s12">
+                    <h2>Yamini Vyas</h2>
+                    <img src="images/ya.jpeg" alt="s12" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s13">
+                    <h2>bhumika</h2>
+                    <img src="images/bh.jpeg" alt="s13" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s14">
+                    <h2>Shivam Pandey</h2>
+                    <img src="images/sgi.jpeg" alt="s14" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s15">
+                    <h2>Danish</h2>
+                    <img src="images/da.jpeg" alt="s15" height="350px" width="300px">
+
+                </div>
+                <div class="stu" id="s16">
+                    <h2>Ashish</h2>
+                    <img src="images/as.jpeg" alt="s16" height="350px" width="300px">
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        bb = []
+        li = document.getElementsByClassName('li')
+        for (i = 0; i < li.length; i++) {
+            bb.push(li[i].innerHTML)
+        }
+
+        function update() {
+            b = document.createElement('input')
+            b.type = 'submit'
+            document.getElementById('qw').replaceChild(b, document.getElementById('ub'))
+            a = document.createElement('input')
+            a.type = 'text'
+            document.getElementById('qw').insertBefore(a, b)
+            b.setAttribute('onclick', 'listi()')
+            a.id = 'text'
+            b.id = 'submit'
+        }
+
+        function listi() {
+            val = document.getElementById('text').value
+
+            if (bb.includes(val)) {
+                alert('already exist')
+            }
+            else {
+                this.bb.splice(0, 0, val)
+                li = document.createElement('li')
+
+                li.innerHTML = val
+                console.log(li, val)
+                document.getElementById('list').insertBefore(li, document.getElementById('list').firstChild)
+                document.getElementById('qw').removeChild(document.getElementById('text'))
+                document.getElementById('qw').removeChild(document.getElementById('submit'))
+                b = document.createElement('button')
+                b.setAttribute('onclick', 'update()')
+                b.id = 'ub'
+                console.log(b)
+                document.getElementById('qw').append(b)
+            }
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
